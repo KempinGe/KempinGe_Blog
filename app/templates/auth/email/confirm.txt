@@ -1,0 +1,6 @@
+Dear {{ user.name }}:
+    Welcome to my first web product!
+    now click this link confirm your account:
+    {{ url_for('auth.confirm', token =token, _external =True)}}
+    Sincerely
+    by GKB
