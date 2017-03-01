@@ -8,8 +8,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or '123567g'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
-    FLASKY_MAIL_SUBJECT_PREFIX = '[FLASKY]'
-    FLASKY_MAIL_SENDER = 'Flasky Admin <flasky@example.com>'
+    FLASKY_MAIL_SUBJECT_PREFIX = '163.com'
+    FLASKY_MAIL_SENDER = 'a259643@163.com'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     @staticmethod
@@ -19,8 +19,8 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    MAIL_SERVER = 'smtp.qq.com'
-    MAIL_POST = 587
+    MAIL_SERVER = 'smtp.163.com'
+    MAIL_PORT = 465
     MAIL_USE_TLS = True
     MAIL_USER_SSL = True
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
